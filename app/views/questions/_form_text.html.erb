@@ -1,0 +1,7 @@
+<%= form_for @answer do |f| %>
+  <%= f.hidden_field :question_id, value: @answer.question.id %>
+  <p>
+    <%= f.text_area :value %>
+  </p>
+  <input type='submit' />
+<% end %>

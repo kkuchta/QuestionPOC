@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Prompt:</strong>
+  <%= @question.prompt %>
+</p>
+
+<p>
+  <strong>Instructions:</strong>
+  <%= @question.instructions %>
+</p>
+
+<p>
+  <strong>Focus:</strong>
+  <%= @question.focus %>
+</p>
+
+<%= render 'form_' + @question.format %>
