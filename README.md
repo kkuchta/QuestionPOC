@@ -75,6 +75,6 @@ Anyway- in the code, you can see all the relevant data structures in db/seeds.rb
 
 It’s a little hard to see the question graph just by looking at the seed data, so here’s the graph for the `icecream` question set, demonstrating splitting, rejoining, skipping, and multiple exit points:
 
-![graph][http://i.imgur.com/4MRW9Qg.jpg]
+![graph](http://i.imgur.com/4MRW9Qg.jpg)
 
 The `tech` question set is just a straightforward `editor->language->os question path.`
