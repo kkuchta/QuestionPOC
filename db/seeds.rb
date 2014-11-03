@@ -7,6 +7,7 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 Question.destroy_all
+QuestionSet.destroy_all
 
 question_data = [
   # ---- Ice Cream Set ----
@@ -116,3 +117,16 @@ question_data = [
 ]
 
 question_data.each{|question| Question.create!(question) }
+
+question_set_data = [
+  {
+    slug: 'icecream',
+    head_question: Question.find_by_slug('favorite_icecream')
+  },
+  {
+    slug: 'tech',
+    head_question: Question.find_by_slug('editor')
+  },
+]
+
+question_set_data.each{|question_set| QuestionSet.create!(question_set)}

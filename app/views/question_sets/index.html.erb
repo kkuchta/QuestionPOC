@@ -1,0 +1,21 @@
+<h1>Listing Question Sets</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>slug</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @question_sets.each do |question_set| %>
+      <tr>
+        <td><%= question_set.slug %></td>
+        <td><%= link_to 'Start', question_set.head_question %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+

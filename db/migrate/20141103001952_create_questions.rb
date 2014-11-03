@@ -7,6 +7,7 @@ class CreateQuestions < ActiveRecord::Migration
       t.text :focus
       t.string :slug
       t.text :options_json
+      t.references :question_set
 
       t.timestamps
     end
