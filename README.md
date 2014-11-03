@@ -70,7 +70,8 @@ So, the general flow is that when a user enters a question, we fetch all the Pos
 
 In this codebase, though, I've skipped the User for simplicity.  Also, I added a rudementary QuestionSet model that just has a pointer to the first question in a question graph.
 
-———
+------
+
 Anyway- in the code, you can see all the relevant data structures in db/seeds.rb.  Beyond that, the only interesting logic is in the models and the answers_controller.
 
 It’s a little hard to see the question graph just by looking at the seed data, so here’s the graph for the `icecream` question set, demonstrating splitting, rejoining, skipping, and multiple exit points:
