@@ -39,8 +39,6 @@ ActiveRecord::Schema.define(version: 20141103053949) do
   create_table "questions", force: true do |t|
     t.string   "format"
     t.text     "prompt"
-    t.text     "instructions"
-    t.text     "focus"
     t.string   "slug"
     t.text     "options_json"
     t.datetime "created_at"

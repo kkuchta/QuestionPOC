@@ -3,6 +3,7 @@ class Question < ActiveRecord::Base
 
   accepts_nested_attributes_for :possible_values
 
+  # Given that answer, where should we go next?  Nil if nowhere.
   def next_question( answer )
     found_value = possible_values.find do |possible_value|
       possible_value.matches? answer
